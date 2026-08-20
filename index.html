@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 5th Monthsary 🖤</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- =========================
+     PASSWORD SCREEN
+========================= -->
+
+<div id="passwordScreen">
+
+    <div class="password-overlay">
+
+        <div class="password-box">
+
+            <div class="password-heart">
+                🖤
+            </div>
+
+            <h1>A Little Surprise</h1>
+
+            <p>
+                Happy 5th Monthsary,
+                <br>
+                my beautiful.
+            </p>
+
+            <p class="password-description">
+                There is something special
+                waiting for you inside.
+            </p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter Secret PIN"
+                maxlength="4"
+            >
+
+            <button onclick="checkPassword()">
+                Unlock 🖤
+            </button>
+
+            <p class="hint">
+                A little secret between us.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     MAIN WEBSITE
+========================= -->
+
+<div id="websiteContent">
+
+    <!-- MUSIC -->
+
+    <audio id="music" loop>
+        <source src="its-you-keshi.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- FLOATING HEARTS -->
+
+    <div id="hearts"></div>
+
+
+    <!-- MUSIC BUTTON -->
+
+    <button id="musicBtn" onclick="toggleMusic()">
+        ♫
+    </button>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                A LITTLE CHAPTER OF US
+            </p>
+
+            <h1>
+                Happy 5th
+            </h1>
+
+            <h2>
+                Monthsary 🖤
+            </h2>
+
+            <div class="hero-line"></div>
+
+            <p class="hero-text">
+
+                Five months,
+                countless memories,
+                and one person
+                I never want to lose.
+
+            </p>
+
+            <p class="from-to">
+
+                From <strong>Your Love</strong>
+                <span>♡</span>
+                To <strong>My World</strong>
+
+            </p>
+
+            <button class="begin-btn" onclick="openGift()">
+                Open Our Story
+                <span>↓</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MONTHSARY INTRO
+    ========================= -->
+
+    <section id="giftSection" class="section intro-section">
+
+        <div class="glass-card">
+
+            <p class="eyebrow">
+                03 MARCH — 03 AUGUST 2026
+            </p>
+
+            <h2>
+                Five Months With You
+            </h2>
+
+            <div class="divider"></div>
+
+            <p>
+
+                Happy 5th monthsary, my beautiful.
+
+                <br><br>
+
+                I honestly can't believe
+                it's already been five months together.
+
+                Time seems to fly when I'm with you,
+                but at the same time,
+                every single moment we've shared
+                feels so meaningful and special to me.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COUNTER
+    ========================= -->
+
+    <section class="section">
+
+        <div class="counter-card">
+
+            <p class="eyebrow">
+                OUR LITTLE MILESTONE
+            </p>
+
+            <h2>
+                5 Months
+            </h2>
+
+            <p>
+                of choosing each other,
+                again and again.
+            </p>
+
+            <div class="counter-line"></div>
+
+            <div class="mini-stats">
+
+                <div>
+                    <strong>05</strong>
+                    <span>Months</span>
+                </div>
+
+                <div>
+                    <strong>∞</strong>
+                    <span>Memories</span>
+                </div>
+
+                <div>
+                    <strong>01</strong>
+                    <span>Us</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PHOTO GALLERY
+    ========================= -->
+
+    <section class="section">
+
+        <p class="eyebrow center">
+            OUR MEMORIES
+        </p>
+
+        <h2 class="section-title">
+            Little Moments,
+            <br>
+            Big Memories.
+        </h2>
+
+        <p class="section-subtitle">
+            Eight little pieces of our story.
+        </p>
+
+
+        <div class="polaroid-container">
+
+
+            <!-- PHOTO 1 -->
+
+            <div class="polaroid">
+
+                <img
+                    src="photo1.jpg"
+                    alt="Our Memory 1"
+                >
+
+                <span>
+                    One of my favorite moments.
+                </span>
+
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div class="polaroid">
+
+                <img
+                    src="photo2.jpg"
+                    alt="Our Memory 2"
+                >
+
+                <span>
+                    You make everything better.
+                </span>
+
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div class="polaroid">
+
+                <img
+                    src="photo3.jpg"
+                    alt="Our Memory 3"
+                >
+
+                <span>
+                    Just you and me.
+                </span>
+
+            </div>
+
+
+            <!-- PHOTO 4 -->
+
+            <div class="polaroid">
+
+                <img
+                    src="photo4.jpg"
+                    alt="Our Memory 4"
+                >
+
+                <span>
+                    A memory worth keeping.
+                </span>
+
+            </div>
+
+
+            <!-- PHOTO 5 -->
+
+            <div class="polaroid">
+
+                <img
+                    src="photo5.jpg"
+                    alt="Our Memory 5"
+                >
+
+                <span>
+                    My favorite person.
+                </span>
+
+            </div>
+
+
+            <!-- PHOTO 6 -->
+
+            <div class="polaroid">
+
+                <img
+                    src="photo6.jpg"
+                    alt="Our Memory 6"
+                >
+
+                <span>
+                    Always you.
+                </span>
+
+            </div>
+
+
+            <!-- PHOTO 7 -->
+
+            <div class="polaroid">
+
+                <img
+                    src="photo7.jpg"
+                    alt="Our Memory 7"
+                >
+
+                <span>
+                    Another beautiful memory.
+                </span>
+
+            </div>
+
+
+            <!-- PHOTO 8 -->
+
+            <div class="polaroid">
+
+                <img
+                    src="photo8.jpg"
+                    alt="Our Memory 8"
+                >
+
+                <span>
+                    My favorite chapter.
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY YOU ARE SPECIAL
+    ========================= -->
+
+    <section class="section">
+
+        <p class="eyebrow center">
+            JUST A FEW THINGS
+        </p>
+
+        <h2 class="section-title">
+            Why I Love
+            <br>
+            Having You In My Life.
+        </h2>
+
+
+        <div class="cards">
+
+
+            <div class="reason-card">
+
+                <div class="reason-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    Your Smile
+                </h3>
+
+                <p>
+                    Your smile can turn
+                    even my worst days
+                    into something beautiful.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="reason-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    Your Patience
+                </h3>
+
+                <p>
+                    Thank you for always
+                    trying to understand me,
+                    even when I'm difficult.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="reason-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    Your Heart
+                </h3>
+
+                <p>
+                    You have a beautiful heart,
+                    and I'm lucky enough
+                    to experience it.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="reason-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    Your Presence
+                </h3>
+
+                <p>
+                    Somehow everything feels
+                    a little easier
+                    when you're around.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="reason-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    My Safe Space
+                </h3>
+
+                <p>
+                    You're the person
+                    I can always run to
+                    without hesitation.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="reason-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    Simply You
+                </h3>
+
+                <p>
+                    I don't need a reason.
+                    I love you because
+                    you're simply you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LOVE LETTER
+    ========================= -->
+
+    <section class="section letter-section">
+
+        <p class="eyebrow center">
+            FROM YOUR LOVE
+        </p>
+
+        <h2 class="section-title">
+            A Letter
+            <br>
+            For My World. 💌
+        </h2>
+
+
+        <div class="letter-box">
+
+            <div class="letter-top">
+
+                <span>
+                    TO MY WORLD
+                </span>
+
+                <span>
+                    05
+                </span>
+
+            </div>
+
+
+            <p>
+
+                Happy 5th monthsary, my beautiful.
+
+                <br><br>
+
+                I honestly can't believe it's already
+                been five months together.
+                Time seems to fly when I'm with you,
+                but at the same time,
+                every single moment we've shared
+                feels so meaningful and special to me.
+
+                <br><br>
+
+                Thank you for staying by my side,
+                for your endless patience,
+                and for being the best reason
+                behind my smile every single day.
+
+                You're not just my girlfriend,
+                you're my safe space,
+                my home,
+                and the person I can always run to
+                without any doubt.
+
+                Having you in my life
+                is truly one of the best things
+                that has ever happened to me.
+
+                <br><br>
+
+                I'm sorry if I still fall short sometimes,
+                or if I ever drive you crazy.
+
+                But please know that my feelings
+                for you only grow stronger
+                with each passing day.
+
+                The more time we spend together,
+                the more certain I am
+                that you're the only one I want.
+
+                <br><br>
+
+                As we hit this 5 month milestone,
+                I hope we keep growing together,
+                understanding each other deeper,
+                and facing whatever comes our way
+                side by side.
+
+                <br><br>
+
+                I'm so grateful to have you,
+                and I love you more than words
+                can express.
+
+                <br><br>
+
+                Happy 5 months,
+                my world.
+
+                <br><br>
+
+                Forever yours,
+                <br>
+
+                <strong>
+                    Your Love 🖤
+                </strong>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         OUR STORY
+    ========================= -->
+
+    <section class="section story-section">
+
+        <p class="eyebrow center">
+            OUR STORY
+        </p>
+
+        <h2 class="section-title">
+            Five Months.
+            <br>
+            One Beautiful Story.
+        </h2>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-number">
+                    01
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>
+                        THE BEGINNING
+                    </span>
+
+                    <h3>
+                        Where It All Started
+                    </h3>
+
+                    <p>
+                        Two people,
+                        one beginning,
+                        and a story we never knew
+                        would become this special.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-number">
+                    02
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>
+                        MONTH 01
+                    </span>
+
+                    <h3>
+                        Getting To Know You
+                    </h3>
+
+                    <p>
+                        Every conversation,
+                        every laugh,
+                        and every little moment
+                        made me want to know you more.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-number">
+                    03
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>
+                        MONTH 03
+                    </span>
+
+                    <h3>
+                        Becoming Us
+                    </h3>
+
+                    <p>
+                        Slowly but surely,
+                        you became one of
+                        the most important parts
+                        of my everyday life.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-number">
+                    04
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>
+                        MONTH 05
+                    </span>
+
+                    <h3>
+                        Still Choosing You
+                    </h3>
+
+                    <p>
+                        Five months later,
+                        and if I had to choose again,
+                        I'd still choose you.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL MESSAGE
+    ========================= -->
+
+    <section class="final-section">
+
+        <div class="final-overlay"></div>
+
+        <div class="final-content">
+
+            <p class="eyebrow">
+                AND THIS IS ONLY THE BEGINNING
+            </p>
+
+            <h2>
+                Happy 5th
+            </h2>
+
+            <h1>
+                Monthsary,
+                <br>
+                My World. 🖤
+            </h1>
+
+            <div class="final-line"></div>
+
+            <p>
+
+                May we keep growing.
+
+                <br>
+
+                May we keep choosing each other.
+
+                <br>
+
+                May there always be an "us."
+
+                <br><br>
+
+                Five months down,
+                and hopefully
+                a lifetime to go.
+
+            </p>
+
+            <div class="final-heart">
+                ♡
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ENDING
+    ========================= -->
+
+    <section class="ending">
+
+        <h2>
+            Made With Love 🖤
+        </h2>
+
+        <p>
+            From Your Love
+        </p>
+
+        <span>
+            For My World
+        </span>
+
+        <p class="year">
+            2026
+        </p>
+
+    </section>
+
+</div>
+
+
+<!-- SCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+  </html>
