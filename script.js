@@ -159,7 +159,6 @@ function toggleMusic(){
 
 let heartInterval;
 
-
 function createHeart(){
 
     const container =
@@ -187,25 +186,41 @@ function createHeart(){
             )
         ];
 
+    /* HATI BOLEH MUNCUL
+       DI SELURUH LAYAR */
+
     heart.style.left =
         Math.random() * 100 + "vw";
 
+    /* MULAI DARI ATAS */
+
+    heart.style.top = "-40px";
+
+    /* UKURAN RANDOM */
+
     heart.style.fontSize =
-        Math.random() * 16 + 12 + "px";
+        Math.random() * 18 + 12 + "px";
+
+    /* KECEPATAN RANDOM */
+
+    const duration =
+        Math.random() * 5 + 6;
 
     heart.style.animationDuration =
-        Math.random() * 5 + 7 + "s";
+        duration + "s";
+
+    /* OPACITY RANDOM */
 
     heart.style.opacity =
-        Math.random() * .5 + .2;
+        Math.random() * .5 + .25;
 
     container.appendChild(heart);
 
-    setTimeout(()=>{
+    setTimeout(() => {
 
         heart.remove();
 
-    },12000);
+    }, (duration + 2) * 1000);
 
 }
 
@@ -214,8 +229,10 @@ function startHearts(){
 
     if(heartInterval) return;
 
+    /* HATI MUNCUL LEBIH SERING */
+
     heartInterval =
-        setInterval(createHeart,700);
+        setInterval(createHeart,350);
 
 }
 
